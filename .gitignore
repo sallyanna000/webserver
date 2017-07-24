@@ -1,0 +1,5 @@
+# ignoring target files
+target/
+
+# ignoring log files
+logs/
