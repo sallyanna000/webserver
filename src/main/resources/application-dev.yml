@@ -1,0 +1,26 @@
+# 开发环境配置文件
+# 服务端口
+server:
+  port: 28080
+spring:
+  # 数据库设置
+  datasource:
+    url: jdbc:mysql://10.139.6.28:3306/test?useSSL=false
+    username: dx
+    password: dx@TBD123
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      max-active: 20
+      initial-size: 1
+      min-idle: 3
+      max-wait: 60000
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      filters: stat,wall
+
+debug: false
+info: false

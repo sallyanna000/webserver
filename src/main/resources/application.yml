@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    active: dev # 开发环境配置文件
+  application:
+    name: web server
+    druid:
+      max-active: 20
+      initial-size: 1
+      min-idle: 3
+      max-wait: 60000
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      filters: stat,wall
+
+
+# mybatis配置
+mybatis:
+  type-aliases-package: com.dx.webserver.entity.model
+  mapper-locations: classpath*:/mapper/**/*.xml
