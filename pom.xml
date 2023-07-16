@@ -17,7 +17,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring.boot.version>1.4.2.RELEASE</spring.boot.version>
         <swagger.ui.version>2.6.1</swagger.ui.version>
-        <pagehelper.version>4.1.6</pagehelper.version>
+        <pagehelper.version>5.3.1</pagehelper.version>
     </properties>
 
     <!-- 设定除中央仓库(repo1.maven.org/maven2/)外的其他仓库,按设定顺序进行查找. -->
